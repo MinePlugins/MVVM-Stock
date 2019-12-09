@@ -23,6 +23,16 @@ namespace Stock
         public MainWindow()
         {
             InitializeComponent();
+            Main.Content = new List();
+        }
+
+        private void MenuItem_Click_List(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new List();
+        }
+        private void MenuItem_Click_Main(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Add();
         }
     }
 }

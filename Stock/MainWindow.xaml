@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Stock" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Product">
+                    <MenuItem Header="_New" Click="MenuItem_Click_Main"/>
+                    <MenuItem Header="_List" Click="MenuItem_Click_List"/>
+                </MenuItem>
+            </Menu>
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden" />
+        </DockPanel>
     </Grid>
 </Window>
